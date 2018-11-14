@@ -28,6 +28,16 @@ new_age_siblings << age_siblings.sort
 new_age_siblings.reverse
 puts new_age_siblings
 
+puts age_siblings[0]
+puts age_siblings[2]
+puts age_siblings[-1]
+
+puts flip_coin.count('heads')
+
+fav_artists.delete('noname')
+puts fav_artists
+
+
 puts "\n -------- \n\n"
 
 finnish_dictionary = { :aave => 'ghost', :soturi => 'warrior', :sisu => 'stoic determination' }
@@ -51,3 +61,6 @@ fav_movies['Beauty and the Beast'] = 1991
 fav_movies['Beauty and the Beast remake'] = 2017
 
 puts fav_movies
+
+world_cities[:london] = 9000000
+puts world_cities
