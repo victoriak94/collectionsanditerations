@@ -17,3 +17,4 @@ world_cities = { :london => 8136000, :tokyo => 9273000, :hong_kong => 7392000 }
 age_cousins = { :jack => 22, :sandra => 28, :helen => 26, :patrick => 22 }
 
 puts finnish_dictionary[:aave]
+puts fav_movies[:rear_window]
