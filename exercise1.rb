@@ -9,7 +9,13 @@ puts flip_coin
 puts fav_colours[0]
 puts age_siblings.sort
 age_siblings << 0
+puts age_siblings
+puts fav_colours[-1]
 
+empty_array = []
+empty_array << flip_coin.reverse
+
+puts empty_array
 
 finnish_dictionary = { :aave => 'ghost', :soturi => 'warrior', :sisu => 'stoic determination' }
 fav_movies = { :before_sunset => 2004, :the_handmaiden => 2016, :rear_window => 1954 }
@@ -18,3 +24,12 @@ age_cousins = { :jack => 22, :sandra => 28, :helen => 26, :patrick => 22 }
 
 puts finnish_dictionary[:aave]
 puts fav_movies[:rear_window]
+
+world_cities[:new_york] = 8623000
+
+puts world_cities
+puts world_cities[:london]
+
+puts "I think #{fav_artists[1]} is great!"
+puts "I think #{fav_artists[0]} is great!"
+puts "I think #{fav_artists[2]} is great!"
