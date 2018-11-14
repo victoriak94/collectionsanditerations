@@ -17,19 +17,37 @@ empty_array << flip_coin.reverse
 
 puts empty_array
 
+puts "I think #{fav_artists[1]} is great!"
+puts "I think #{fav_artists[0]} is great!"
+puts "I think #{fav_artists[2]} is great!"
+
+puts fav_artists[0..1]
+
+new_age_siblings = []
+new_age_siblings << age_siblings.sort
+new_age_siblings.reverse
+puts new_age_siblings
+
+puts "\n -------- \n\n"
+
 finnish_dictionary = { :aave => 'ghost', :soturi => 'warrior', :sisu => 'stoic determination' }
-fav_movies = { :before_sunset => 2004, :the_handmaiden => 2016, :rear_window => 1954 }
+fav_movies = { 'Before Sunset' => 2004, 'The Handmaiden' => 2016, 'Rear Window' => 1954 }
 world_cities = { :london => 8136000, :tokyo => 9273000, :hong_kong => 7392000 }
 age_cousins = { :jack => 22, :sandra => 28, :helen => 26, :patrick => 22 }
 
 puts finnish_dictionary[:aave]
-puts fav_movies[:rear_window]
+puts fav_movies['Rear Window']
 
 world_cities[:new_york] = 8623000
 
 puts world_cities
 puts world_cities[:london]
 
-puts "I think #{fav_artists[1]} is great!"
-puts "I think #{fav_artists[0]} is great!"
-puts "I think #{fav_artists[2]} is great!"
+fav_movies.each do |film, year|
+  puts "#{film} was released in #{year}"
+end
+
+fav_movies['Beauty and the Beast'] = 1991
+fav_movies['Beauty and the Beast remake'] = 2017
+
+puts fav_movies
